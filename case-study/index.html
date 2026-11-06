@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Smart Healthcare Super App — a complete UX and UI design case study for a unified healthcare product concept."
+    />
+    <meta name="theme-color" content="#07111f" />
+    <title>Smart Healthcare Super App — UX/UI Case Study</title>
+    <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to case study</a>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header" data-nav>
+      <a class="site-mark" href="#top" aria-label="Smart Healthcare Super App case study home">
+        <span class="mark-symbol" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3 12h4l2-6 4 12 2-6h6" /></svg>
+        </span>
+        <span><strong>AERIS</strong><small>Product case study</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open section navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Case study sections">
+        <a href="#overview">Overview</a>
+        <a href="#ux-strategy">UX process</a>
+        <a href="#wireframes">Wireframes</a>
+        <a href="#design-system">Design system</a>
+        <a href="#ui-gallery">UI screens</a>
+        <a href="#validation">Validation</a>
+      </nav>
+      <a class="header-cta" href="#ui-gallery">View screens</a>
+    </header>
+
+    <aside class="section-rail" aria-label="On this page">
+      <span class="rail-label">CASE STUDY</span>
+      <a href="#top" data-section-link="top">01 <span>Cover</span></a>
+      <a href="#overview" data-section-link="overview">02 <span>Overview</span></a>
+      <a href="#ux-strategy" data-section-link="ux-strategy">03 <span>Strategy</span></a>
+      <a href="#research" data-section-link="research">04 <span>Research</span></a>
+      <a href="#journeys" data-section-link="journeys">05 <span>Journeys</span></a>
+      <a href="#wireframes" data-section-link="wireframes">06 <span>Wireframes</span></a>
+      <a href="#design-system" data-section-link="design-system">07 <span>System</span></a>
+      <a href="#ui-gallery" data-section-link="ui-gallery">08 <span>UI</span></a>
+      <a href="#motion" data-section-link="motion">09 <span>Motion</span></a>
+      <a href="#validation" data-section-link="validation">10 <span>Validation</span></a>
+    </aside>
+
+    <main id="main">
+      <section class="hero section-dark" id="top" data-section>
+        <div class="hero-glow glow-a"></div>
+        <div class="hero-glow glow-b"></div>
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span>UX/UI DESIGN</span><span>HEALTHCARE PRODUCT CONCEPT</span></div>
+          <h1>Healthcare, connected around&nbsp;you.</h1>
+          <p class="hero-lede">
+            A unified mobile experience for doctor discovery, pharmacy, lab tests, health records,
+            emergency information, and personal care management.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#overview">Explore the case study <span>↘</span></a>
+            <a class="button button-ghost" href="#ui-gallery">View the UI showcase</a>
+          </div>
+          <dl class="project-facts">
+            <div><dt>Coverage</dt><dd>22 high-fidelity screens</dd></div>
+            <div><dt>Platform</dt><dd>iPhone 14 · 390 × 844</dd></div>
+            <div><dt>Build</dt><dd>React prototype + static case study</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Selected real app screens">
+          <div class="device device-hero device-one">
+            <div class="device-notch"></div>
+            <img src="./assets/screenshots/home-light.png" alt="Aeris home dashboard in light mode" />
+          </div>
+          <div class="device device-hero device-two">
+            <div class="device-notch"></div>
+            <img src="./assets/screenshots/doctor-profile.png" alt="Fictional doctor profile screen" />
+          </div>
+          <div class="device device-hero device-three">
+            <div class="device-notch"></div>
+            <img src="./assets/screenshots/home-dark.png" alt="Aeris home dashboard in dark mode" />
+          </div>
+          <span class="visual-note note-a">LIGHT MODE<br /><b>Emerald glass</b></span>
+          <span class="visual-note note-b">DARK MODE<br /><b>Navy + cyan</b></span>
+        </div>
+        <div class="hero-caption">Designed as a transparent, interactive prototype—not a connected healthcare service.</div>
+      </section>
+
+      <section class="case-section" id="overview" data-section>
+        <div class="section-heading reveal">
+          <span class="chapter">01 · PROJECT OVERVIEW</span>
+          <h2>One care space for a fragmented journey.</h2>
+          <p>
+            The concept explores how essential healthcare tasks might live in one predictable,
+            privacy-conscious experience without making unsupported clinical promises.
+          </p>
+        </div>
+        <div class="overview-grid">
+          <article class="glass-card statement-card reveal">
+            <span class="card-kicker">PROBLEM</span>
+            <h3>Healthcare journeys often span disconnected tools and processes.</h3>
+            <p>
+              People may use separate apps, websites, calls, and physical documents for consultations,
+              medicines, tests, and reports. That fragmentation can make next steps harder to understand.
+            </p>
+          </article>
+          <article class="glass-card challenge-card reveal">
+            <span class="card-kicker">DESIGN CHALLENGE</span>
+            <h3>How might we unify essential services without overwhelming users?</h3>
+            <p>
+              The experience needs to stay readable, accessible, trustworthy, and honest about what a
+              prototype can and cannot do.
+            </p>
+          </article>
+        </div>
+
+        <div class="objective-band reveal">
+          <div class="objective-intro"><span>PROJECT INTENT</span><h3>A clearer path from need to next step.</h3></div>
+          <div class="objective-list">
+            <span><b>01</b> Simplify service discovery</span>
+            <span><b>02</b> Clarify booking and status</span>
+            <span><b>03</b> Organize health records</span>
+            <span><b>04</b> Support digital confidence</span>
+            <span><b>05</b> Build a scalable system</span>
+            <span><b>06</b> Keep emergency access direct</span>
+          </div>
+        </div>
+
+        <div class="scope-grid reveal">
+          <div>
+            <span class="mini-label">IMPLEMENTED</span>
+            <strong>Interactive mobile prototype</strong>
+            <p>22 screens, dual themes, local demo state, navigation, validation, cart, booking, notification, and preference interactions.</p>
+          </div>
+          <div>
+            <span class="mini-label proposed">PLANNED / PROPOSED</span>
+            <strong>Research and validation</strong>
+            <p>Interviews, surveys, competitor review, accessibility audit, and usability testing remain planned activities.</p>
+          </div>
+          <div>
+            <span class="mini-label conceptual">NOT CONNECTED</span>
+            <strong>Healthcare services</strong>
+            <p>No real doctors, lab providers, pharmacies, payments, records, video calls, or emergency response are connected.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section section-tinted" id="ux-strategy" data-section>
+        <div class="section-heading reveal">
+          <span class="chapter">02 · UX STRATEGY</span>
+          <h2>Designing from service clarity outward.</h2>
+          <p>
+            The strategy is organized around a small set of core journeys, reusable interaction patterns,
+            and assumptions that must be validated before real-world use.
+          </p>
+        </div>
+        <div class="strategy-loop reveal" aria-label="UX strategy framework">
+          <div><span>01</span><strong>Frame</strong><small>Define the service problem</small></div>
+          <i>→</i>
+          <div><span>02</span><strong>Explore</strong><small>Plan research and review</small></div>
+          <i>→</i>
+          <div><span>03</span><strong>Structure</strong><small>Map journeys and flows</small></div>
+          <i>→</i>
+          <div><span>04</span><strong>Design</strong><small>Build the system and UI</small></div>
+          <i>→</i>
+          <div><span>05</span><strong>Validate</strong><small>Test, learn, iterate</small></div>
+        </div>
+        <div class="three-col">
+          <article class="info-card reveal">
+            <span class="index">A</span><h3>User needs</h3>
+            <ul>
+              <li>Recognize the correct service</li>
+              <li>Understand costs and next steps</li>
+              <li>Find records again later</li>
+              <li>Use clear, readable controls</li>
+            </ul>
+          </article>
+          <article class="info-card reveal">
+            <span class="index">B</span><h3>Product priorities</h3>
+            <ul>
+              <li>One predictable navigation model</li>
+              <li>Reusable booking patterns</li>
+              <li>Transparent prototype states</li>
+              <li>Scalable service components</li>
+            </ul>
+          </article>
+          <article class="info-card reveal">
+            <span class="index">C</span><h3>Constraints</h3>
+            <ul>
+              <li>No connected provider services</li>
+              <li>No real patient information</li>
+              <li>Mobile-first iPhone viewport</li>
+              <li>Assumptions require validation</li>
+            </ul>
+          </article>
+        </div>
+        <div class="principles reveal">
+          <div class="principles-title"><span>DESIGN PRINCIPLES</span><h3>Calm by default.<br />Clear when it matters.</h3></div>
+          <div class="principle-list">
+            <article><b>01</b><div><strong>Guide, don’t overwhelm</strong><p>Prioritize the next useful action over dense health dashboards.</p></div></article>
+            <article><b>02</b><div><strong>Trust through transparency</strong><p>Label simulated behavior and protect sensitive details.</p></div></article>
+            <article><b>03</b><div><strong>Consistency across services</strong><p>Reuse search, filters, booking, status, and confirmation patterns.</p></div></article>
+            <article><b>04</b><div><strong>Accessible from the start</strong><p>Readable type, clear labels, focus states, and reduced motion are system requirements.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="research" data-section>
+        <div class="section-heading reveal">
+          <div class="heading-line">
+            <span class="chapter">03 · RESEARCH PLAN</span>
+            <span class="status-label status-planned">PLANNED · NOT YET CONDUCTED</span>
+          </div>
+          <h2>Questions first. Claims only after evidence.</h2>
+          <p>
+            The attached planning document contains a proposed methodology, not completed research.
+            The case study keeps that distinction explicit.
+          </p>
+        </div>
+        <div class="research-grid">
+          <article class="research-card reveal">
+            <span>01</span><h3>Semi-structured interviews</h3>
+            <p>Understand current booking, medicine, test, record, trust, and caregiver behaviors.</p>
+            <small>PROPOSED METHOD</small>
+          </article>
+          <article class="research-card reveal">
+            <span>02</span><h3>Survey</h3>
+            <p>Explore service frequency, digital confidence, privacy expectations, and accessibility needs.</p>
+            <small>OPTIONAL METHOD</small>
+          </article>
+          <article class="research-card reveal">
+            <span>03</span><h3>Task analysis</h3>
+            <p>Break common healthcare journeys into actions, decisions, information needs, and recovery paths.</p>
+            <small>PROPOSED METHOD</small>
+          </article>
+          <article class="research-card reveal">
+            <span>04</span><h3>Accessibility review</h3>
+            <p>Review comparable interfaces and test the prototype’s contrast, labels, focus, motion, and scaling.</p>
+            <small>PLANNED REVIEW</small>
+          </article>
+        </div>
+
+        <div class="research-questions reveal">
+          <div><span>RESEARCH QUESTIONS</span><h3>What must be understood before this concept moves forward?</h3></div>
+          <ol>
+            <li><span>01</span>How do people currently coordinate appointments, medicines, tests, and reports?</li>
+            <li><span>02</span>What information is essential before someone confirms a healthcare booking?</li>
+            <li><span>03</span>What makes a digital health experience feel trustworthy—or unsafe?</li>
+            <li><span>04</span>How do older adults and caregivers navigate multi-service healthcare tasks?</li>
+            <li><span>05</span>How should routine services and emergency guidance be clearly separated?</li>
+          </ol>
+        </div>
+
+        <div class="competitor-wrap reveal">
+          <div class="subheading">
+            <div><span class="chapter-small">COMPETITOR REVIEW</span><h3>A review framework, not completed findings.</h3></div>
+            <p>Suggested products from the planning document are retained as research candidates only.</p>
+          </div>
+          <div class="comparison-table" role="table" aria-label="Proposed competitor review matrix">
+            <div class="table-row table-head" role="row">
+              <span role="columnheader">Product</span><span role="columnheader">Services to review</span><span role="columnheader">Review status</span>
+            </div>
+            <div class="table-row" role="row"><strong>Practo</strong><span>Doctor discovery, booking, teleconsultation, records</span><em>To review</em></div>
+            <div class="table-row" role="row"><strong>Tata 1mg</strong><span>Pharmacy, lab tests, service hierarchy, order status</span><em>To review</em></div>
+            <div class="table-row" role="row"><strong>Apollo 24|7</strong><span>Connected-care ecosystem, navigation, trust cues</span><em>To review</em></div>
+            <div class="table-row" role="row"><strong>PharmEasy</strong><span>Pharmacy, lab booking, reporting, accessibility</span><em>To review</em></div>
+          </div>
+          <p class="evidence-note"><span>!</span>No claim is made that these products have or lack specific features. Platform, date, and evidence should be recorded during the actual review.</p>
+        </div>
+      </section>
+
+      <section class="case-section section-tinted" id="personas">
+        <div class="section-heading reveal">
+          <div class="heading-line"><span class="chapter">04 · PROVISIONAL PERSONAS</span><span class="status-label status-hypothesis">HYPOTHESES TO VALIDATE</span></div>
+          <h2>Design lenses—not research participants.</h2>
+          <p>These provisional personas help pressure-test the concept until evidence can validate, revise, or replace them.</p>
+        </div>
+        <div class="persona-grid">
+          <article class="persona-card reveal">
+            <div class="persona-number">P / 01</div>
+            <div class="persona-icon" aria-hidden="true">YS</div>
+            <span>BUSY STUDENT / YOUNG ADULT</span>
+            <h3>Independent care around a changing schedule.</h3>
+            <dl><div><dt>Goals</dt><dd>Find a relevant doctor, understand booking details, keep reports organized.</dd></div><div><dt>Potential friction</dt><dd>Dense screens, unclear steps, uncertainty after booking.</dd></div><div><dt>Design implication</dt><dd>Fast discovery, concise appointment details, visible confirmation.</dd></div></dl>
+          </article>
+          <article class="persona-card reveal">
+            <div class="persona-number">P / 02</div>
+            <div class="persona-icon" aria-hidden="true">EP</div>
+            <span>ELDERLY PATIENT</span>
+            <h3>Predictable, readable access to everyday care.</h3>
+            <dl><div><dt>Goals</dt><dd>Review appointments, read comfortably, find records, know how to get help.</dd></div><div><dt>Potential friction</dt><dd>Small text, low contrast, unlabeled icons, complex forms.</dd></div><div><dt>Design implication</dt><dd>Larger targets, plain language, explicit labels, clear back actions.</dd></div></dl>
+          </article>
+          <article class="persona-card reveal">
+            <div class="persona-number">P / 03</div>
+            <div class="persona-icon" aria-hidden="true">FC</div>
+            <span>FAMILY CAREGIVER</span>
+            <h3>Coordination with clear consent and identity.</h3>
+            <dl><div><dt>Goals</dt><dd>Organize family tasks and understand the next step for each person.</dd></div><div><dt>Potential friction</dt><dd>Confusing profiles, unclear permissions, missing service status.</dd></div><div><dt>Design implication</dt><dd>Clear profile context, access boundaries, and record identity.</dd></div></dl>
+          </article>
+        </div>
+
+        <div class="empathy-map reveal">
+          <div class="empathy-center"><span>HYPOTHESIS MAP</span><strong>Everyday healthcare coordination</strong><small>To validate through interviews and observation</small></div>
+          <article><span>SAYS</span><p>May ask for clear confirmation, costs, and a visible next step.</p></article>
+          <article><span>THINKS</span><p>May question what information is stored and who can access it.</p></article>
+          <article><span>DOES</span><p>May switch between apps, calls, paper reports, and family messages.</p></article>
+          <article><span>FEELS</span><p>May experience uncertainty when status or provider information is unclear.</p></article>
+        </div>
+      </section>
+
+      <section class="case-section" id="journeys" data-section>
+        <div class="section-heading reveal">
+          <div class="heading-line"><span class="chapter">05 · JOURNEY & OPPORTUNITY MAP</span><span class="status-label status-hypothesis">PROPOSED JOURNEY</span></div>
+          <h2>From recognizing a need to understanding what happens next.</h2>
+          <p>Select a stage to explore the user goal, potential friction, and the prototype’s design response.</p>
+        </div>
+        <div class="journey-explorer reveal">
+          <div class="journey-stages" role="tablist" aria-label="Doctor booking journey"></div>
+          <div class="journey-detail" role="tabpanel" aria-live="polite"></div>
+        </div>
+
+        <div class="opportunity-map reveal">
+          <div class="subheading"><div><span class="chapter-small">PAIN POINT → OPPORTUNITY → RESPONSE</span><h3>Translating assumptions into testable design decisions.</h3></div></div>
+          <div class="opportunity-row"><span class="hypothesis-chip">HYPOTHESIS</span><strong>Services may feel fragmented.</strong><i>→</i><span>Unified service discovery</span><i>→</i><em>Four clear dashboard shortcuts and one navigation model</em></div>
+          <div class="opportunity-row"><span class="hypothesis-chip">HYPOTHESIS</span><strong>Booking status may be unclear.</strong><i>→</i><span>Explicit next steps</span><i>→</i><em>Summary, confirmation, detail sheet, and simulated status</em></div>
+          <div class="opportunity-row"><span class="hypothesis-chip">HYPOTHESIS</span><strong>Reports may be hard to find later.</strong><i>→</i><span>Organized record access</span><i>→</i><em>Search, categories, metadata, and a readable preview</em></div>
+          <div class="opportunity-row"><span class="hypothesis-chip">HYPOTHESIS</span><strong>Emergency entry may be overlooked.</strong><i>→</i><span>Fast, separate access</span><i>→</i><em>A visible home shortcut and direct, non-animated guidance</em></div>
+        </div>
+      </section>
+
+      <section class="case-section section-tinted" id="architecture">
+        <div class="section-heading reveal">
+          <span class="chapter">06 · INFORMATION ARCHITECTURE</span>
+          <h2>A small primary model. Purposeful secondary paths.</h2>
+          <p>The mobile navigation emphasizes five frequent destinations while keeping lab tests and emergency information easy to reach from Home.</p>
+        </div>
+        <div class="ia-diagram reveal" aria-label="Proposed information architecture">
+          <div class="ia-root"><span>AERIS</span><strong>Smart Healthcare Super App</strong></div>
+          <div class="ia-connector"></div>
+          <div class="ia-level">
+            <article><strong>Home</strong><span>Search</span><span>Lab tests</span><span>Emergency</span><span>Notifications</span></article>
+            <article><strong>Doctors</strong><span>Search & filter</span><span>Doctor profile</span><span>Booking</span><span>Video demo</span></article>
+            <article><strong>Pharmacy</strong><span>Categories</span><span>Product detail</span><span>Cart</span><span>Order summary</span></article>
+            <article><strong>Records</strong><span>Categories</span><span>Search</span><span>Report detail</span><span>Preview</span></article>
+            <article><strong>Profile</strong><span>Personal details</span><span>Settings</span><span>Privacy</span><span>Help</span></article>
+          </div>
+        </div>
+
+        <div class="flows-block reveal">
+          <div class="subheading"><div><span class="chapter-small">KEY USER FLOWS</span><h3>Consistent patterns across service types.</h3></div></div>
+          <div class="flow-tabs" role="tablist" aria-label="Prototype flows">
+            <button class="active" type="button" data-flow="doctor" role="tab">Doctor consultation</button>
+            <button type="button" data-flow="pharmacy" role="tab">Pharmacy</button>
+            <button type="button" data-flow="lab" role="tab">Lab tests</button>
+            <button type="button" data-flow="records" role="tab">Health records</button>
+          </div>
+          <div class="flow-diagram" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="case-section" id="wireframes" data-section>
+        <div class="section-heading reveal">
+          <div class="heading-line"><span class="chapter">07 · LOW-FIDELITY WIREFRAMES</span><span class="status-label status-concept">CONCEPTUAL RECONSTRUCTIONS</span></div>
+          <h2>Structure before surface.</h2>
+          <p>
+            Original low-fidelity exports were not present in the project. The diagrams below are clearly
+            labeled reconstructions based on the implemented hierarchy—not original research artifacts.
+          </p>
+        </div>
+        <div class="wireframe-viewer reveal">
+          <div class="wireframe-tabs" role="tablist" aria-label="Conceptual wireframes"></div>
+          <div class="wireframe-stage"></div>
+          <div class="wireframe-caption"></div>
+        </div>
+      </section>
+
+      <section class="case-section section-tinted" id="visual-direction">
+        <div class="section-heading reveal">
+          <span class="chapter">08 · VISUAL DIRECTION</span>
+          <h2>Clinical clarity without clinical coldness.</h2>
+          <p>
+            Light mode combines emerald, mint, and warm off-white surfaces. Dark mode uses navy, cyan,
+            and subtle violet illumination. Both share the same information hierarchy and interaction model.
+          </p>
+        </div>
+        <div class="visual-values reveal">
+          <article><span class="value-orb orb-trust"></span><div><strong>Trustworthy</strong><p>Clear labels, calm contrast, honest status messages.</p></div></article>
+          <article><span class="value-orb orb-calm"></span><div><strong>Calm</strong><p>Atmospheric depth without a noisy medical dashboard.</p></div></article>
+          <article><span class="value-orb orb-premium"></span><div><strong>Premium</strong><p>Glass surfaces, hairline borders, restrained motion.</p></div></article>
+          <article><span class="value-orb orb-human"></span><div><strong>Human</strong><p>Readable language and purposeful reassurance.</p></div></article>
+        </div>
+        <div class="theme-showcase reveal">
+          <div class="theme-copy">
+            <span>DUAL THEME SYSTEM</span>
+            <h3>One product.<br />Two calm expressions.</h3>
+            <p>Switch between actual app screenshots. The structure, service hierarchy, and semantic status colors stay consistent.</p>
+            <div class="segmented theme-switch" role="group" aria-label="Screenshot theme">
+              <button type="button" class="active" data-theme-shot="light" aria-pressed="true">☀ Light</button>
+              <button type="button" data-theme-shot="dark" aria-pressed="false">☾ Dark</button>
+            </div>
+          </div>
+          <div class="theme-device">
+            <div class="device">
+              <div class="device-notch"></div>
+              <img src="./assets/screenshots/home-light.png" alt="Home dashboard in light theme" data-theme-image />
+            </div>
+            <div class="theme-token-stack">
+              <span style="--swatch:#f3f8f5"></span><span style="--swatch:#ddf4e7"></span><span style="--swatch:#16865b"></span><span style="--swatch:#18352a"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="design-system" data-section>
+        <div class="section-heading reveal">
+          <span class="chapter">09 · DESIGN SYSTEM</span>
+          <h2>Reusable foundations for every care module.</h2>
+          <p>Shared semantic tokens and composable components keep doctors, pharmacy, lab tests, and records visually coherent.</p>
+        </div>
+
+        <div class="token-section reveal">
+          <div class="subheading"><div><span class="chapter-small">COLOR</span><h3>Semantic color, not decoration.</h3></div><p>Values shown are extracted from the implemented app.</p></div>
+          <div class="swatch-grid">
+            <article style="--swatch:#07111f"><span></span><strong>Midnight</strong><code>#07111F</code></article>
+            <article style="--swatch:#0b1728"><span></span><strong>Elevated navy</strong><code>#0B1728</code></article>
+            <article style="--swatch:#f3f8f5"><span></span><strong>Light background</strong><code>#F3F8F5</code></article>
+            <article style="--swatch:#ddf4e7"><span></span><strong>Soft mint</strong><code>#DDF4E7</code></article>
+            <article style="--swatch:#16865b"><span></span><strong>Healthcare green</strong><code>#16865B</code></article>
+            <article style="--swatch:#50d7e5"><span></span><strong>Dark accent</strong><code>#50D7E5</code></article>
+            <article style="--swatch:#f2bf68"><span></span><strong>Warning</strong><code>#F2BF68</code></article>
+            <article style="--swatch:#ff7b85"><span></span><strong>Error / urgent</strong><code>#FF7B85</code></article>
+          </div>
+        </div>
+
+        <div class="type-layout reveal">
+          <div class="type-specimen">
+            <span class="chapter-small">TYPOGRAPHY</span>
+            <div class="type-display">Care, connected.</div>
+            <div class="type-heading">A clear path to what’s next.</div>
+            <p>DM Sans supports readable interface text. Manrope adds a crisp, editorial voice to key headings and values.</p>
+            <div class="type-meta"><span>Manrope · 600–800</span><span>DM Sans · 400–700</span></div>
+          </div>
+          <div class="scale-spec">
+            <div><span>30</span><strong>Display</strong><em>Manrope 600 / 1.15</em></div>
+            <div><span>22</span><strong>Page heading</strong><em>Manrope 650 / 1.2</em></div>
+            <div><span>14</span><strong>Section title</strong><em>Manrope 650 / 1.3</em></div>
+            <div><span>12</span><strong>Body</strong><em>DM Sans 400 / 1.55</em></div>
+            <div><span>9</span><strong>Supporting</strong><em>DM Sans 500 / 1.4</em></div>
+          </div>
+        </div>
+
+        <div class="foundations-grid reveal">
+          <article class="foundation-card"><span>SPACING</span><div class="spacing-demo"><i style="--space:4px">4</i><i style="--space:8px">8</i><i style="--space:12px">12</i><i style="--space:16px">16</i><i style="--space:24px">24</i><i style="--space:32px">32</i></div></article>
+          <article class="foundation-card"><span>RADII</span><div class="radius-demo"><i style="--radius:10px">10</i><i style="--radius:14px">14</i><i style="--radius:18px">18</i><i style="--radius:24px">24</i></div></article>
+          <article class="foundation-card glass-demo-card"><span>GLASS SURFACE</span><div class="mini-glass"><b>Frosted card</b><small>Blur · subtle border · ambient shadow</small></div></article>
+        </div>
+
+        <div class="component-lab reveal">
+          <div class="subheading"><div><span class="chapter-small">COMPONENT LIBRARY</span><h3>Live, lightweight demonstrations.</h3></div><p>These static-site demos echo implemented app states.</p></div>
+          <div class="component-grid">
+            <article class="component-panel">
+              <header><span>BUTTONS</span><code>Default · loading · disabled</code></header>
+              <div class="demo-row">
+                <button class="demo-button primary" type="button" data-demo-loading>Continue</button>
+                <button class="demo-button secondary" type="button">Secondary</button>
+                <button class="demo-button primary" type="button" disabled>Disabled</button>
+              </div>
+            </article>
+            <article class="component-panel">
+              <header><span>INPUT</span><code>Focus · validation</code></header>
+              <label class="demo-input"><span>Email address</span><input type="email" placeholder="you@example.com" data-validation-demo /><small>Enter an email, then press Enter.</small></label>
+            </article>
+            <article class="component-panel">
+              <header><span>STATUS</span><code>Semantic + labeled</code></header>
+              <div class="demo-row"><span class="demo-chip success">✓ Available</span><span class="demo-chip warning">! Pending</span><span class="demo-chip error">× Urgent</span></div>
+            </article>
+            <article class="component-panel">
+              <header><span>TOGGLE</span><code>Persistent state</code></header>
+              <div class="demo-toggle-row"><span>Appointment reminders</span><button class="demo-toggle active" type="button" role="switch" aria-checked="true"><i></i></button></div>
+            </article>
+            <article class="component-panel service-demo">
+              <header><span>SERVICE CARD</span><code>Press feedback</code></header>
+              <button class="mini-service-card" type="button"><span>✚</span><strong>Doctors</strong><small>Find care</small><i>→</i></button>
+            </article>
+            <article class="component-panel">
+              <header><span>FEEDBACK</span><code>Toast · modal · sheet</code></header>
+              <div class="demo-row"><button class="demo-button secondary" type="button" data-demo-toast>Show toast</button><button class="demo-button secondary" type="button" data-demo-modal>Open modal</button><button class="demo-button secondary" type="button" data-demo-sheet>Open sheet</button></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section section-tinted" id="ui-gallery" data-section>
+        <div class="section-heading reveal">
+          <span class="chapter">10 · HIGH-FIDELITY UI</span>
+          <h2>22 implemented screens. One connected system.</h2>
+          <p>Every image in this gallery is a genuine 390 × 844 capture from the running React application.</p>
+        </div>
+        <div class="gallery-toolbar reveal">
+          <div class="gallery-filters" role="group" aria-label="Filter screens">
+            <button type="button" class="active" data-filter="all">All</button>
+            <button type="button" data-filter="auth">Authentication</button>
+            <button type="button" data-filter="doctors">Doctors</button>
+            <button type="button" data-filter="commerce">Pharmacy & labs</button>
+            <button type="button" data-filter="account">Records & account</button>
+          </div>
+          <span class="gallery-count">22 screens</span>
+        </div>
+        <div class="screen-gallery reveal" aria-live="polite"></div>
+      </section>
+
+      <section class="case-section" id="interactive-ui">
+        <div class="section-heading reveal">
+          <span class="chapter">11 · INTERACTIVE DEVICE</span>
+          <h2>Walk through the finished interface.</h2>
+          <p>This device navigator uses genuine screenshots. It demonstrates screen sequence, not a live embedded application.</p>
+        </div>
+        <div class="device-explorer reveal">
+          <div class="device-explorer-copy">
+            <span class="device-counter">01 / 22</span>
+            <h3 data-device-title>Splash</h3>
+            <p data-device-copy>Brand entrance and prototype status.</p>
+            <div class="device-controls">
+              <button type="button" data-device-prev aria-label="Previous screen">←</button>
+              <button type="button" data-device-next aria-label="Next screen">→</button>
+            </div>
+            <label class="screen-select-label">Jump to screen
+              <select data-device-select aria-label="Select app screen"></select>
+            </label>
+          </div>
+          <div class="device device-large">
+            <div class="device-notch"></div>
+            <img data-device-image src="./assets/screenshots/splash.png" alt="Splash screen" />
+            <span class="device-sheen"></span>
+          </div>
+          <div class="device-notes">
+            <span><i></i>Actual app capture</span>
+            <span><i></i>390 × 844 viewport</span>
+            <span><i></i>Fictional sample content</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section section-tinted" id="motion" data-section>
+        <div class="section-heading reveal">
+          <span class="chapter">12 · MOTION & MICRO-INTERACTIONS</span>
+          <h2>Movement that confirms, guides, and gets out of the way.</h2>
+          <p>Replay small demonstrations of the implemented motion language. Reduced-motion preferences disable non-essential effects.</p>
+        </div>
+        <div class="motion-grid">
+          <article class="motion-card reveal">
+            <header><span>01</span><div><strong>Splash entrance</strong><p>Logo scale, glow, copy rise, progress.</p></div><button type="button" data-replay="splash">Replay</button></header>
+            <div class="motion-stage splash-motion" data-motion="splash"><span class="motion-logo">⌁</span><b>AERIS</b><small>Care, connected around you.</small><i></i></div>
+          </article>
+          <article class="motion-card reveal">
+            <header><span>02</span><div><strong>Screen transition</strong><p>Short fade and vertical rise.</p></div><button type="button" data-replay="screen">Replay</button></header>
+            <div class="motion-stage screen-motion" data-motion="screen"><div><span></span><span></span><span></span></div></div>
+          </article>
+          <article class="motion-card reveal">
+            <header><span>03</span><div><strong>Navigation indicator</strong><p>Persistent active-state movement.</p></div><button type="button" data-replay="nav">Replay</button></header>
+            <div class="motion-stage nav-motion" data-motion="nav"><i></i><span>⌂</span><span>✚</span><span>◇</span><span>▤</span><span>○</span></div>
+          </article>
+          <article class="motion-card reveal">
+            <header><span>04</span><div><strong>Success feedback</strong><p>Restrained confirmation, no celebration loop.</p></div><button type="button" data-replay="success">Replay</button></header>
+            <div class="motion-stage success-motion" data-motion="success"><span>✓</span><b>Demo booking created</b></div>
+          </article>
+          <article class="motion-card reveal">
+            <header><span>05</span><div><strong>Loading shimmer</strong><p>Communicates wait without blocking context.</p></div><button type="button" data-replay="shimmer">Replay</button></header>
+            <div class="motion-stage shimmer-motion" data-motion="shimmer"><span></span><i></i><i></i></div>
+          </article>
+          <article class="motion-card reveal">
+            <header><span>06</span><div><strong>Theme transition</strong><p>Sun/moon selection and color crossfade.</p></div><button type="button" data-theme-motion>Toggle</button></header>
+            <div class="motion-stage theme-motion" data-motion="theme"><button type="button" aria-label="Toggle motion demo theme"><i>☀</i><i>☾</i><span></span></button><b>Theme</b></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section" id="prototype">
+        <div class="section-heading reveal">
+          <span class="chapter">13 · PROTOTYPE JOURNEYS</span>
+          <h2>Four guided paths through the product.</h2>
+          <p>Each walkthrough shows the implemented design flow and the honest simulated outcome.</p>
+        </div>
+        <div class="walkthrough reveal">
+          <div class="walkthrough-nav" role="tablist">
+            <button type="button" class="active" data-walkthrough="doctor">Doctor consultation</button>
+            <button type="button" data-walkthrough="pharmacy">Pharmacy</button>
+            <button type="button" data-walkthrough="lab">Lab tests</button>
+            <button type="button" data-walkthrough="records">Health records</button>
+          </div>
+          <div class="walkthrough-track"></div>
+        </div>
+      </section>
+
+      <section class="case-section section-tinted" id="validation" data-section>
+        <div class="section-heading reveal">
+          <div class="heading-line"><span class="chapter">14 · ACCESSIBILITY & VALIDATION</span><span class="status-label status-planned">PLANNED VALIDATION</span></div>
+          <h2>Built with accessibility in mind. Not yet formally audited.</h2>
+          <p>Implemented considerations and future validation are separated below to avoid overstating compliance.</p>
+        </div>
+        <div class="validation-grid">
+          <article class="checklist-card reveal">
+            <span class="mini-label">IMPLEMENTED CONSIDERATIONS</span>
+            <ul class="checklist">
+              <li><span>✓</span>Visible keyboard focus states</li>
+              <li><span>✓</span>Labeled icon controls</li>
+              <li><span>✓</span>Explicit form labels and errors</li>
+              <li><span>✓</span>Semantic status text, not color alone</li>
+              <li><span>✓</span>Reduced-motion media query</li>
+              <li><span>✓</span>Theme and preference persistence</li>
+              <li><span>✓</span>Emergency guidance without unverified numbers</li>
+              <li><span>✓</span>Honest simulated states</li>
+            </ul>
+          </article>
+          <article class="checklist-card reveal">
+            <span class="mini-label proposed">REQUIRES VALIDATION</span>
+            <ul class="checklist pending">
+              <li><span>○</span>Formal contrast audit</li>
+              <li><span>○</span>Screen-reader task testing</li>
+              <li><span>○</span>Text scaling across all screens</li>
+              <li><span>○</span>Touch-target measurement</li>
+              <li><span>○</span>Older-adult usability sessions</li>
+              <li><span>○</span>Caregiver consent workflows</li>
+              <li><span>○</span>Cross-browser testing</li>
+              <li><span>○</span>Clinical and legal review</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="testing-plan reveal">
+          <div class="subheading"><div><span class="chapter-small">USABILITY TEST PLAN</span><h3>Seven tasks to evaluate the core model.</h3></div><span class="status-label status-planned">NO RESULTS CLAIMED</span></div>
+          <div class="task-grid">
+            <article><span>01</span><strong>Find a doctor</strong><p>Search, filter, and choose a fictional profile.</p></article>
+            <article><span>02</span><strong>Book a consultation</strong><p>Select a date and time and understand the demo confirmation.</p></article>
+            <article><span>03</span><strong>Find a report</strong><p>Locate and preview a sample health record.</p></article>
+            <article><span>04</span><strong>Book a lab test</strong><p>Choose collection, date, and time window.</p></article>
+            <article><span>05</span><strong>Locate emergency info</strong><p>Find safe next-step guidance without delay.</p></article>
+            <article><span>06</span><strong>Change a preference</strong><p>Update notification, privacy, or text-size settings.</p></article>
+            <article><span>07</span><strong>Switch themes</strong><p>Move between light and dark without losing the current screen.</p></article>
+          </div>
+        </div>
+
+        <div class="iteration-log reveal">
+          <div class="subheading"><div><span class="chapter-small">IMPLEMENTED ITERATIONS</span><h3>Changes verified through design review and build QA.</h3></div></div>
+          <div class="log-row"><time>01</time><strong>Splash navigation</strong><span>Tap-only entry created a dead end.</span><em>Added controlled auto-advance with timer cleanup and immediate skip.</em><b>Implemented</b></div>
+          <div class="log-row"><time>02</time><strong>Theme system</strong><span>Single dark theme limited accessibility and preference.</span><em>Added emerald light mode, persisted selection, and synchronized toggles.</em><b>Implemented</b></div>
+          <div class="log-row"><time>03</time><strong>Prototype honesty</strong><span>External actions could be mistaken for real services.</span><em>Added explicit demo, unconfigured, not-sent, and no-payment messages.</em><b>Implemented</b></div>
+          <div class="log-row"><time>04</time><strong>Interaction completeness</strong><span>Visible controls were initially decorative.</span><em>Added validation, filters, local cart, booking, read state, dialogs, sheets, and feedback.</em><b>Implemented</b></div>
+        </div>
+      </section>
+
+      <section class="case-section" id="outcome">
+        <div class="section-heading reveal">
+          <span class="chapter">15 · FINAL OUTCOME</span>
+          <h2>A credible product concept—and a clear validation agenda.</h2>
+          <p>
+            The result is a polished, interactive healthcare prototype with a reusable system and complete
+            service journeys. It demonstrates design intent, not real-world clinical effectiveness.
+          </p>
+        </div>
+        <div class="outcome-metrics reveal">
+          <article><strong>22</strong><span>Implemented screens</span></article>
+          <article><strong>02</strong><span>Complete color themes</span></article>
+          <article><strong>05</strong><span>Primary destinations</span></article>
+          <article><strong>04</strong><span>Guided service journeys</span></article>
+        </div>
+        <div class="future-grid">
+          <article class="reveal"><span>LEARNING 01</span><h3>Trust is an interaction pattern.</h3><p>Clear states, transparent limitations, and predictable navigation matter as much as visual polish.</p></article>
+          <article class="reveal"><span>LEARNING 02</span><h3>One system can serve many modules.</h3><p>Shared search, filter, booking, status, and confirmation patterns reduce complexity across services.</p></article>
+          <article class="reveal"><span>FUTURE 01</span><h3>Validate the assumptions.</h3><p>Conduct interviews, competitor review, accessibility evaluation, and task-based usability testing.</p></article>
+          <article class="reveal"><span>FUTURE 02</span><h3>Explore connected care responsibly.</h3><p>Verified providers, consent-based family profiles, secure record sharing, and additional languages remain future scope.</p></article>
+        </div>
+      </section>
+
+      <section class="closing" id="closing">
+        <div class="closing-glow"></div>
+        <span class="chapter">SMART HEALTHCARE SUPER APP</span>
+        <h2>Clear care journeys.<br />Honest prototype boundaries.</h2>
+        <p>A complete UX/UI concept for a more connected everyday healthcare experience.</p>
+        <div><a class="button button-primary" href="#top">Back to the beginning ↑</a><a class="button button-ghost" href="#ui-gallery">Browse all screens</a></div>
+        <small>Concept design · 22 app screens · Static portfolio case study</small>
+      </section>
+    </main>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+    <dialog class="lightbox" aria-label="Screen preview">
+      <button class="lightbox-close" type="button" aria-label="Close preview">×</button>
+      <button class="lightbox-nav prev" type="button" aria-label="Previous screen">←</button>
+      <div class="lightbox-content">
+        <div class="lightbox-device"><img src="" alt="" /></div>
+        <div class="lightbox-meta"><span></span><h3></h3><p></p><small></small></div>
+      </div>
+      <button class="lightbox-nav next" type="button" aria-label="Next screen">→</button>
+    </dialog>
+
+    <div class="demo-toast" role="status" aria-live="polite"><span>✓</span><p>Preference saved in this demo.</p><button type="button" aria-label="Dismiss">×</button></div>
+    <div class="demo-modal" hidden>
+      <div class="demo-backdrop"></div>
+      <div role="dialog" aria-modal="true" aria-labelledby="demo-modal-title">
+        <span>PROTOTYPE NOTICE</span><h3 id="demo-modal-title">A clear confirmation state.</h3>
+        <p>Fast feedback explains what happened and what the user can do next.</p>
+        <button class="demo-button primary" type="button" data-demo-close>Understood</button>
+      </div>
+    </div>
+    <div class="demo-sheet" hidden>
+      <div class="demo-backdrop"></div>
+      <div role="dialog" aria-modal="true" aria-label="Demo bottom sheet">
+        <i></i><span>BOTTOM SHEET</span><h3>Context without losing place.</h3>
+        <p>Sheets keep related detail close to the active task and dismiss quickly.</p>
+        <button class="demo-button primary" type="button" data-sheet-close>Close</button>
+      </div>
+    </div>
+
+    <script src="./js/gallery.js" defer></script>
+    <script src="./js/interactions.js" defer></script>
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+}
+.reveal.is-visible { opacity: 1; transform: none; }
+
+@keyframes float-device {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -8px; }
+}
+@keyframes orbit-soft {
+  from { rotate: 0deg; }
+  to { rotate: 360deg; }
+}
+@keyframes replay-pop {
+  0% { opacity: 0; transform: scale(0.72); }
+  70% { opacity: 1; transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+@keyframes replay-rise {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes replay-bar {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes nav-slide {
+  0%, 12% { transform: translateX(-88px); }
+  40%, 55% { transform: translateX(-44px); }
+  82%, 100% { transform: translateX(44px); }
+}
+@keyframes shimmer {
+  from { background-position: 140% 0; }
+  to { background-position: -140% 0; }
+}
+@keyframes success-ring {
+  0% { box-shadow: 0 0 0 0 rgba(114,224,175,0.3); }
+  100% { box-shadow: 0 0 0 28px transparent; }
+}
+
+.device-one { animation: float-device 6s ease-in-out infinite; }
+.device-two { animation: float-device 7.5s ease-in-out 1s infinite; }
+.device-three { animation: float-device 6.8s ease-in-out 0.4s infinite; }
+
+.motion-stage.replay .motion-logo { animation: replay-pop 0.55s var(--ease) both; }
+.motion-stage.replay.splash-motion b { animation: replay-rise 0.45s var(--ease) 0.18s both; }
+.motion-stage.replay.splash-motion small { animation: replay-rise 0.45s var(--ease) 0.28s both; }
+.motion-stage.replay.splash-motion > i { transform-origin: left; animation: replay-bar 0.8s var(--ease) 0.35s both; }
+.motion-stage.replay.screen-motion > div { animation: replay-rise 0.4s var(--ease) both; }
+.motion-stage.replay.nav-motion > i { animation: nav-slide 1.6s var(--ease) both; }
+.motion-stage.replay.success-motion > span { animation: replay-pop 0.5s var(--ease) both, success-ring 1s ease-out 0.25s both; }
+.motion-stage.replay.success-motion > b { animation: replay-rise 0.4s var(--ease) 0.2s both; }
+.motion-stage.replay.shimmer-motion > * { background-size: 300% 100%; animation: shimmer 1.2s linear 2; }
+
+.demo-modal:not([hidden]) > div:last-child { animation: replay-pop 0.24s var(--ease); }
+.demo-sheet:not([hidden]) > div:last-child { animation: sheet-enter 0.3s var(--ease); }
+@keyframes sheet-enter { from { transform: translateY(100%); } to { transform: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+  .reveal { opacity: 1; transform: none; }
+}

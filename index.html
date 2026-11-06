@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="<!-- figma:lang -->">
+  <head>
+    <!-- figma:head-start -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><!-- figma:title --></title>
+    <script>
+      ;(() => {
+        let theme = 'light'
+        try {
+          theme = localStorage.getItem('aeris-theme') === 'dark' ? 'dark' : 'light'
+        } catch {}
+        document.documentElement.dataset.theme = theme
+        document.documentElement.style.backgroundColor = theme === 'dark' ? '#07111f' : '#f3f8f5'
+      })()
+    </script>
+    <!-- figma:head-end -->
+  </head>
+  <body>
+    <!-- figma:body-start -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- figma:body-end -->
+  </body>
+</html>

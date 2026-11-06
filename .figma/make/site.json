@@ -1,0 +1,11 @@
+{
+  "title": "Smart Healthcare Super App",
+  "description": "A unified healthcare app for patients and caregivers to explore doctor consultations, pharmacy products, lab tests, health records, and emergency information.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

@@ -1,0 +1,13 @@
+# Line-ending + binary handling for this repository.
+# This project is small (its screenshots are only a few hundred KB), so assets are
+# stored as regular files and Git LFS is deliberately not used: that keeps the
+# GitHub Pages checkout simple and guarantees the published site gets real images.
+
+* text=auto eol=lf
+
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.webp binary
