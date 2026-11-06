@@ -19,7 +19,7 @@ export const SCREEN_ORDER: Screen[] = [
 ]
 export const NAV_SCREENS: Screen[] = ['home', 'doctors', 'pharmacy', 'records', 'profile']
 
-export const PHOTO = '/doctor-portrait.jpg'
+export const PHOTO = `${import.meta.env.BASE_URL}doctor-portrait.jpg`
 
 /** Fixed prototype "today" so fictional schedules stay internally consistent. */
 export const TODAY = new Date(2025, 5, 23)

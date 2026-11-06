@@ -173,7 +173,7 @@
     const ids = walkthroughs[key];
     walkthroughHost.innerHTML = ids.map((id, index) => {
       const screen = screens.find((entry) => entry.id === id);
-      return `<article class="walkthrough-step"><img src="${base}${screen.image}" alt="${screen.title} screen" loading="lazy" width="390" height="844"><span>STEP ${String(index + 1).padStart(2, "0")}</span><strong>${screen.title}</strong><p>${screen.purpose}</p></article>`;
+      return `<article class="walkthrough-step"><div class="walkthrough-frame"><img src="${base}${screen.image}" alt="${screen.title} screen" loading="lazy" width="390" height="844"></div><span>STEP ${String(index + 1).padStart(2, "0")}</span><strong>${screen.title}</strong><p>${screen.purpose}</p></article>`;
     }).join("");
   };
   document.querySelector(".walkthrough-nav").addEventListener("click", (event) => {
